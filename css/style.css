@@ -37,7 +37,16 @@ p {
 }
 
 .section-header {
-  color: #B99867;
+  color: #8B0000;
+}
+
+.text-highlight {
+  background-color: #DE9C21;
+}
+
+.small-section {
+  height: 75vh;
+  overflow: hidden;
 }
 
 .quotes {
@@ -58,12 +67,12 @@ p {
 #recipe-button {
   background-color: #294057;
   border-radius: 10px;
-  border: 2px #B99867 solid;
+  border: 2px #DE9C21 solid;
   margin-top: 2em;
 }
 
 #recipe-button:hover {
-  background-color: #B99867;
+  background-color: #DE9C21;
 }
 
 .sidenav-trigger {
@@ -85,7 +94,17 @@ p {
 }
 
 .half-page-images {
-  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh; /* You must set a specified height */
+}
+
+#figures-background {
+  background-image: url(../images/figures-background-image.png);
+}
+
+#boloderolo-background {
+  background-image: url(../images/products/goiaba.jpeg);
 }
 
 /* image slider */
