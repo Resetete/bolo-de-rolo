@@ -23,6 +23,8 @@ nav .brand-logo {
 
 p {
   line-height: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
 }
 
 #hero-subtitle {
@@ -37,6 +39,21 @@ p {
 .section-header {
   color: #B99867;
 }
+
+.quotes {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+}
+.end-quote {
+  transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+  display: inline-block;
+  }
+
 
 #recipe-button {
   background-color: #294057;
@@ -65,6 +82,10 @@ p {
 
 #leaves-background img {
   min-width: 100%;
+}
+
+.half-page-images {
+  overflow: hidden;
 }
 
 /* image slider */
