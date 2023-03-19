@@ -25,9 +25,24 @@ p {
   line-height: 2rem;
 }
 
+#hero-subtitle {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#hero-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 6em;
+}
+
+.section-header {
+  color: #B99867;
+}
+
 #recipe-button {
   background-color: #294057;
   border-radius: 10px;
+  border: 2px #B99867 solid;
+  margin-top: 2em;
 }
 
 #recipe-button:hover {
