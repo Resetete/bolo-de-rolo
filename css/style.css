@@ -29,11 +29,26 @@ p {
 
 #hero-subtitle {
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 #hero-title {
   font-family: 'Dancing Script', cursive;
   font-size: 6em;
+}
+
+#hero-image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+#hero-text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .section-header {
@@ -93,10 +108,12 @@ p {
   min-width: 100%;
 }
 
+
 .half-page-images {
   background-repeat: no-repeat;
   background-size: cover;
   height: 75vh; /* You must set a specified height */
+  color: #8B0000
 }
 
 #figures-background {
@@ -105,6 +122,42 @@ p {
 
 #boloderolo-background {
   background-image: url(../images/products/goiaba.jpeg);
+}
+
+.social-media-background {
+  background-color: #DE9C21;
+  height: 10vh;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.social-media-icons img {
+  height: 5vh;
+  margin: 10px;
+  filter: invert(12%) sepia(54%) saturate(4887%) hue-rotate(353deg) brightness(94%) contrast(120%);
+}
+
+.page-footer {
+  background-color: #DE9C21;
+}
+
+.copyright-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+  color: white;
+}
+
+.copyright-wrapper img {
+  width: 3vw;
+  padding-right: 10px;
 }
 
 /* image slider */
