@@ -21,6 +21,10 @@ nav .brand-logo {
   width: 100%;
 }
 
+h3 {
+  color: #294057;
+}
+
 p {
   line-height: 2rem;
   font-family: 'Open Sans', sans-serif;
@@ -35,6 +39,10 @@ p {
 #hero-title {
   font-family: 'Dancing Script', cursive;
   font-size: 6em;
+}
+
+.handwriting {
+  font-family: 'Dancing Script', cursive;
 }
 
 #hero-image-section {
@@ -197,6 +205,49 @@ p {
      transform: translate3d(-100%,0,0);
    }
 }
+
+/******* RECIPE PAGE ***********/
+#recipe-start-section {
+  background-color: lightgray;
+  z-index: -1;
+}
+
+#recipe-start-section .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10vh 0;
+}
+
+.image-wrapper {
+  width: 50vw;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+#first-row {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  z-index: 0;
+}
+
+#intro-content {
+  width: 80%;
+  background-color: white;
+  margin-top: -200px;
+  margin-left: 200px;
+  padding: 2rem;
+  z-index: 100;
+}
+
+/* **************** */
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
