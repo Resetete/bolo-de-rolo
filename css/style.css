@@ -116,7 +116,6 @@ p {
   min-width: 100%;
 }
 
-
 .half-page-images {
   background-repeat: no-repeat;
   background-size: cover;
@@ -245,6 +244,22 @@ p {
   margin-left: 200px;
   padding: 2rem;
   z-index: 100;
+}
+
+#ingredient-image {
+  width: 100%;
+}
+#ingredient-image img {
+  width: 100%;
+}
+
+#ingredients {
+  color: #8B0000;
+  font-weight: bold;
+}
+
+#ingredients li {
+  margin: 1em 0;
 }
 
 /* **************** */
