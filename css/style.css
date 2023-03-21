@@ -246,20 +246,48 @@ p {
   z-index: 100;
 }
 
-#ingredient-image {
+.ingredient-image {
   width: 100%;
 }
-#ingredient-image img {
+.ingredient-image img {
   width: 100%;
+  border-radius: 5px;
 }
 
 #ingredients {
-  color: #8B0000;
+  color: #294057;
   font-weight: bold;
 }
 
 #ingredients li {
   margin: 1em 0;
+  vertical-align: middle;
+}
+
+#ingredients li:hover {
+  color: #8B0000;
+}
+
+.characteristics {
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.recipe-step:hover {
+  color:#8B0000;
+}
+
+.hint {
+  font-size: 1em;
+  color: #444
+}
+
+.hint-header {
+  color: #DE9C21 !important;
+}
+
+.padding-top {
+  padding-top: 3em;
 }
 
 /* **************** */
