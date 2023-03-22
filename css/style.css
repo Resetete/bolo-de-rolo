@@ -31,6 +31,10 @@ p {
   font-size: 1.3em;
 }
 
+.small-text {
+  font-size: 1em;
+}
+
 #hero-subtitle {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -292,6 +296,12 @@ p {
 
 .inner-card-image {
   padding: 2em;
+  overflow: hidden;
+  height: 250px;
+}
+
+.extra-large {
+  height: 600px;
 }
 
 /* **************** */
