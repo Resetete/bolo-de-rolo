@@ -290,6 +290,10 @@ p {
   padding-top: 3em;
 }
 
+.inner-card-image {
+  padding: 2em;
+}
+
 /* **************** */
 
 @media only screen and (max-width : 992px) {
