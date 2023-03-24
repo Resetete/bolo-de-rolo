@@ -161,6 +161,14 @@ p {
   background-color: #DE9C21;
 }
 
+.footer-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .copyright-wrapper {
   display: flex;
   flex-direction: row;
@@ -352,6 +360,14 @@ p {
 
 .blog-list li {
   padding: 1em 0;
+}
+
+/****************/
+/*** imprint ******/
+/****************/
+
+.section-sub-header {
+  color: #294057;
 }
 
 /* **************** */
