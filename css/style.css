@@ -306,6 +306,10 @@ p {
   padding-top: 3em;
 }
 
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
 .inner-card-image {
   padding: 2em;
   overflow: hidden;
@@ -327,18 +331,27 @@ p {
 /********************/
 
 .blog-image-wrapper {
-  width: 20%;
+  max-width: 20vw;
+  overflow: hidden;
 }
 .blog-image-wrapper img {
   width: 100%;
 }
 
 .blog-title {
-  padding: 1rem;
+  padding: 1em;
+  text-align: left;
 }
 
-.blog-sub-title {
-  padding-left: 1rem;
+.blog-main-article-img-wrapper {
+  max-width: 100%;
+}
+.blog-main-article-img-wrapper img {
+  width: 100%;
+}
+
+.blog-list li {
+  padding: 1em 0;
 }
 
 /* **************** */
