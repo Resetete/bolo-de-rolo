@@ -107,14 +107,14 @@ p {
 }
 
 .parallax-container {
-  min-height: 70vh;
+  min-height: 50vh;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
 
 #leaves-background img {
   min-width: 100%;
@@ -128,7 +128,7 @@ p {
 }
 
 #figures-background {
-  background-image: url(../images/figures-background-image.png);
+  background-image: url(../images/figures-background-image.jpg);
 }
 
 #boloderolo-background {
@@ -302,6 +302,12 @@ p {
 
 .extra-large {
   height: 600px;
+}
+
+#section-separator {
+  min-height: 10vh !important;
+  width: 100%;
+  line-height: 0;
 }
 
 /* **************** */
