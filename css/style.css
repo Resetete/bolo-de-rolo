@@ -46,7 +46,7 @@ p {
 
 #hero-title {
   font-family: 'Dancing Script', cursive;
-  font-size: 6em;
+  font-size: 6rem;
 }
 
 .handwriting {
@@ -385,6 +385,14 @@ p {
 
   #hero-image-section {
     height: 95vh;
+  }
+
+  #hero-subtitle {
+    font-size: 3rem;
+  }
+
+  #hero-title {
+    font-size: 5rem;
   }
 
   /* slide show */
