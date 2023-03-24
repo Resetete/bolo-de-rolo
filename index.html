@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -33,16 +33,16 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RSWEXQM7FS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RSWEXQM7FS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-RSWEXQM7FS');
-</script>
+    gtag('config', 'G-RSWEXQM7FS');
+  </script>
+</head>
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
@@ -53,6 +53,7 @@
         <li><a href="index.html">Übersicht</a></li>
         <li><a href="recipe/index.html">Rezept</a></li>
         <li><a href="background/index.html">Hintergrund</a></li>
+        <li><select class="cloudlocalization-selection"></select></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -192,8 +193,34 @@
 
 
   <!--  Scripts-->
+  <!-- jquery -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- materialize -->
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <!-- cloud translation -->
+  <script
+    src="https://cdn.amcapi.com/localization/1.0.1/cloudlocalization.min.js"
+    crossorigin="anonymous">
+  </script>
+  <script>
+    cloudLocalization({
+      defaultLanguage: "en",
+      urlLanguageLocation: UrlLanguageLocation.none,
+      translatorProvider: TranslatorProvider.none,
+      translatorProviderKey: "",
+      logTranslationsFromProvider: true,
+      languages: [
+        {
+          code: "en",
+          displayName: "English"
+        },
+        {
+          code: "de",
+          displayName: "Deutsch"
+        },
+      ]
+    });
+  </script>
   </body>
 </html>
