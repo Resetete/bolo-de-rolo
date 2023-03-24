@@ -213,6 +213,14 @@ p {
    }
 }
 
+/* show hide image based on view size */
+.mobile-only {
+  display: none;
+}
+.desktop-only {
+  display: block;
+}
+
 /******* RECIPE PAGE ***********/
 #recipe-start-section {
   background-color: lightgray;
@@ -315,7 +323,7 @@ p {
 }
 
 /* **************** */
-/*  MOBILE STYPES */
+/*  MOBILE STYLES */
 /* **************** */
 
 @media only screen and (max-width : 992px) {
@@ -336,7 +344,24 @@ p {
     flex-shrink: 1;
     object-fit: cover;
     width: 50%;
-   }
+  }
+
+  .small-section {
+    min-height: 100vh;
+  }
+
+  .text-highlight {
+    width: 100%;
+  }
+
+  /* show hide image based on view size */
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+
 
   /******************/
   /*** recipe page */
