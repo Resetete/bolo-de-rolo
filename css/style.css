@@ -35,6 +35,10 @@ p {
   font-size: 1em;
 }
 
+.card-content {
+  color: black;
+}
+
 #hero-subtitle {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -311,6 +315,8 @@ p {
 }
 
 /* **************** */
+/*  MOBILE STYPES */
+/* **************** */
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -319,6 +325,34 @@ p {
   }
   #index-banner .section {
     top: 10%;
+  }
+
+  #hero-image-section {
+    height: 95vh;
+  }
+
+  /* slide show */
+  .imagegroup img {
+    flex-shrink: 1;
+    object-fit: cover;
+   }
+
+  /******************/
+  /*** recipe page */
+
+  #recipe-start-section .container {
+    padding: 3vh 0;
+  }
+
+  #intro-content {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 2rem;
+  }
+
+  .material-icons {
+    color: #8B0000 !important;
   }
 }
 
