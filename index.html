@@ -44,16 +44,20 @@
   </script>
 </head>
 <body>
+  <!-- set language when entering the page -->
+  <body id="page-top" onload="translate('de','lng-tag')">
+  <!-- start navigation -->
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="index.html" class="brand-logo">
         <img src="images/logo.png" alt="bolo de rolo brand logo ">
       </a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="index.html">Übersicht</a></li>
+        <li><a href="index.html" lng-tag="home">Übersicht</a></li>
         <li><a href="recipe/index.html">Rezept</a></li>
         <li><a href="background/index.html">Hintergrund</a></li>
-        <li><select class="cloudlocalization-selection"></select></li>
+        <li><a href="javascript:void(0)" id="enTranslator">EN</a></li>
+        <li><a href="javascript:void(0)" id="deTranslator">DE</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -198,29 +202,8 @@
   <!-- materialize -->
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  <!-- cloud translation -->
-  <script
-    src="https://cdn.amcapi.com/localization/1.0.1/cloudlocalization.min.js"
-    crossorigin="anonymous">
-  </script>
-  <script>
-    cloudLocalization({
-      defaultLanguage: "de",
-      urlLanguageLocation: UrlLanguageLocation.none,
-      translatorProvider: TranslatorProvider.none,
-      translatorProviderKey: "",
-      logTranslationsFromProvider: true,
-      languages: [
-        {
-          code: "en",
-          displayName: "English"
-        },
-        {
-          code: "de",
-          displayName: "Deutsch"
-        },
-      ]
-    });
-  </script>
+  <!-- translation scripts -->
+  <script src="js/translate.js"></script>
+  <script src="js/index.js"></script>
   </body>
 </html>
