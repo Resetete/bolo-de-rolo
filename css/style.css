@@ -12,6 +12,10 @@ nav .brand-logo {
   width: 100%;
 }
 
+#enTranslator, #deTranslator {
+  color: #DE9C21;
+  padding: 0 5px;
+}
 #logo-container {
   width: 8vw;
   height: auto;
@@ -381,6 +385,10 @@ p {
   }
   #index-banner .section {
     top: 10%;
+  }
+
+  #enTranslator, #deTranslator {
+    padding: 0 32px;
   }
 
   #hero-image-section {
