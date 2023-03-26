@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Bolo de Rolo - Rezept</title>
+  <title lng-tag="page-title-recipe">Bolo de Rolo - Rezept</title>
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
@@ -50,15 +50,21 @@
         <img src="../images/logo.png" alt="bolo de rolo brand logo ">
       </a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="../index.html">Übersicht</a></li>
-        <li><a href="../recipe/index.html">Rezept</a></li>
-        <li><a href="../background/index.html">Hintergrund</a></li>
+        <li><a href="../index.html" lng-tag="home">Übersicht</a></li>
+        <li><a href="../recipe/index.html" lng-tag="recipe">Rezept</a></li>
+        <li><a href="../background/index.html" lng-tag="background">Hintergrund</a></li>
+        <!-- todo: style and add to other pages -->
+        <li><a href="javascript:void(0)" id="enTranslator">EN</a></li>
+        <li><a href="javascript:void(0)" id="deTranslator">DE</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="../index.html">Übersicht</a></li>
-        <li><a href="../recipe/index.html">Rezept</a></li>
-        <li><a href="../background/index.html">Hintergrund</a></li>
+        <li><a href="../index.html" lng-tag="home">Übersicht</a></li>
+        <li><a href="../recipe/index.html" lng-tag="recipe">Rezept</a></li>
+        <li><a href="../background/index.html" lng-tag="background">Hintergrund</a></li>
+        <!-- todo: style and add to other pages -->
+        <li><a href="javascript:void(0)" id="enTranslator">EN</a></li>
+        <li><a href="javascript:void(0)" id="deTranslator">DE</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -76,12 +82,12 @@
         </form>
       </div>
       <div id="intro-content">
-        <h3><span class="handwriting">Jetzt gehts los!</span> Mein Rezept</h3>
-        <p>Zunächst möchte ich euch gerne sagen, dass ich euch den leckeren Kuchen leider aus persönlichen und zeitlichen Gründen nicht mehr zum Verkauf anbieten kann. Diejenigen unter euch, die in den Genuss meines Kuchens kommen konnten, möchte ich sehr danken und hoffe, es hat geschmeckt. <span class="text-highlight">Muito obrigada!</span></p>
-        <p>Damit diejenigen unter euch, die leider keinen mehr bestellen konnten, möchte ich nun zeigen, wie ihr den Kuchen auch mit etwas Geduld und Übung selbst herstellen könnt.</p>
-        <p>Ich habe eine ganze Weile gebraucht - nämlich 4 Monate - bis ich den Dreh raus hatte. Ich musste dafür auch erst einmal das geeignete Werkzeug, die Ideen für die Geschmacksrichtungen, die Zutaten und das Verpackungsmaterial finden.</p>
-        <p>Mein Rezept des Bolo de Rolo mit Goiaba entspricht nicht ganz dem Original, da er weniger süß ist. Ich habe die Erfahrung gemacht, dass gerade bei der Süße hier weniger mehr ist. Weiter unten Verlinke ich euch die Sachen, die ich im folgenden Rezept verwendet habe. :)</p>
-        <p>Aber jetzt soll es mal losgehen!</p>
+        <h3 lng-tag="recipe-start-title"><span class="handwriting">Jetzt gehts los!</span> Mein Rezept</h3>
+        <p lng-tag="recipe-start-p1">Zunächst möchte ich euch gerne sagen, dass ich euch den leckeren Kuchen leider aus persönlichen und zeitlichen Gründen nicht mehr zum Verkauf anbieten kann. Diejenigen unter euch, die in den Genuss meines Kuchens kommen konnten, möchte ich sehr danken und hoffe, es hat geschmeckt. <span class="text-highlight">Muito obrigada!</span></p>
+        <p lng-tag="recipe-start-p2">Damit diejenigen unter euch, die leider keinen mehr bestellen konnten, möchte ich nun zeigen, wie ihr den Kuchen auch mit etwas Geduld und Übung selbst herstellen könnt.</p>
+        <p lng-tag="recipe-start-p3">Ich habe eine ganze Weile gebraucht - nämlich 4 Monate - bis ich den Dreh raus hatte. Ich musste dafür auch erst einmal das geeignete Werkzeug, die Ideen für die Geschmacksrichtungen, die Zutaten und das Verpackungsmaterial finden.</p>
+        <p lng-tag="recipe-start-p4">Mein Rezept des Bolo de Rolo mit Goiaba entspricht nicht ganz dem Original, da er weniger süß ist. Ich habe die Erfahrung gemacht, dass gerade bei der Süße hier weniger mehr ist. Weiter unten Verlinke ich euch die Sachen, die ich im folgenden Rezept verwendet habe. :)</p>
+        <p lng-tag="recipe-start-p5">Aber jetzt soll es mal losgehen!</p>
       </div>
     </div>
   </div>
@@ -421,5 +427,8 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="../js/materialize.js"></script>
   <script src="../js/init.js"></script>
+  <!-- translation scripts -->
+  <script src="../js/translate.js"></script>
+  <script src="../js/index.js"></script>
   </body>
 </html>
