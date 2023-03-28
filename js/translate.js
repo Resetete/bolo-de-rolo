@@ -1,5 +1,6 @@
 function Translate() {
 	//initialization
+	console.log('in translation script');
 	this.init =  function(attribute, lng){
 		this.attribute = attribute;
 		this.lng = lng;
