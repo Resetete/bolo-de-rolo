@@ -9,6 +9,7 @@ function Translate() {
 		_self = this;
 		var xrhFile = new XMLHttpRequest();
 		//load content data
+		console.log("GET", "lng/"+this.lng+".json");
 		xrhFile.open("GET", "lng/"+this.lng+".json", false);
 		xrhFile.onreadystatechange = function ()
 		{
