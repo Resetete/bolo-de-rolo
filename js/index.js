@@ -27,9 +27,10 @@ function getCookie(cName) {
 
 $(document).ready(function(){
   //This is id of HTML element (English) with attribute lng-tag
-  if (getCookie('language')) {
-    cookieLang = getCookie('language');
-    translate(cookieLang, 'lng-tag')
+  var languageCookie = getCookie("language");
+
+  if (languageCookie != null) {
+    translate(languageCookie, 'lng-tag')
   };
 
   $(".enTranslator").click(function(){
