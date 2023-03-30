@@ -35,6 +35,8 @@ function checkCookies() {
   };
 }
 
+$(window).load(checkCookies);
+
 $(document).ready(function(){
   //This is id of HTML element (English) with attribute lng-tag
   $(".enTranslator").click(function(){
