@@ -25,21 +25,25 @@ function getCookie(cName) {
   return res;
 }
 
-$(document).ready(function(){
-  //This is id of HTML element (English) with attribute lng-tag
+// check the language cookie
+function checkCookies() {
   var languageCookie = getCookie("language");
+  console.log('language set:' + languageCookie);
 
   if (languageCookie != null) {
     translate(languageCookie, 'lng-tag')
   };
+}
 
+$(document).ready(function(){
+  //This is id of HTML element (English) with attribute lng-tag
   $(".enTranslator").click(function(){
-    document.cookie = 'language=en'; // set the cookie with the language if user clicks the language button
+    document.cookie = "language=en"; // set the cookie with the language if user clicks the language button
     translate('en', 'lng-tag');
   });
   //This is id of HTML element (German) with attribute lng-tag
   $(".deTranslator").click(function(){
-    document.cookie = 'language=de'; // set the cookie with the language if user clicks the language button
+    document.cookie = "language=de"; // set the cookie with the language if user clicks the language button
     translate('de', 'lng-tag');
   });
 });
