@@ -40,12 +40,12 @@ $(window).load(checkCookies);
 $(document).ready(function(){
   //This is id of HTML element (English) with attribute lng-tag
   $(".enTranslator").click(function(){
-    document.cookie = "language" + "=" + "en" + ";path=/; domain=bolo-de-rolo.com;SameSite=None;Secure"; // set the cookie with the language if user clicks the language button
+    document.cookie = "language" + "=" + "en" + ";path=/; domain=bolo-de-rolo.com;"; // set the cookie with the language if user clicks the language button
     translate('en', 'lng-tag');
   });
   //This is id of HTML element (German) with attribute lng-tag
   $(".deTranslator").click(function(){
-    document.cookie = "language" + "=" + "de" + ";path=/; domain=bolo-de-rolo.com;SameSite=None;Secure"; // set the cookie with the language if user clicks the language button
+    document.cookie = "language" + "=" + "de" + ";path=/; domain=bolo-de-rolo.com;"; // set the cookie with the language if user clicks the language button
     translate('de', 'lng-tag');
   });
 });
